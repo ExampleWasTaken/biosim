@@ -30,6 +30,6 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v3
       - name: Install dependencies
-        uses: npm ci
+        run: npm ci
       - name: Lint
         run: npx prettier src -c
